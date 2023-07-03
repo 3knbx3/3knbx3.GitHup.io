@@ -1,4 +1,4 @@
-<img width="1280" alt="image" src="https://github.com/3knbx3/3knbx3.GitHup.io/assets/138361341/ea4971d6-c149-49d4-b57f-6da7d174ef2f">---
+---
 layout: post
 title: 敲代码进行时（一）
 date: 2023-7-3
