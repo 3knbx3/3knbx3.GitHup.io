@@ -7,62 +7,62 @@ tags: [编程,体会]
 description: 浅浅记录。
 ---
 
-本身的话一开始打算建这个博客就是为了记录下敲代码的经历嘛。虽说学计算机类这门专业也快一年，但也还是似懂非懂的，学了些浅层的。现在大一小学期正好也开始上程序实践这门课，敲代码做题，那就正好可以每天来记录，学习一下。（虽说上机做着一如既往的很神呀⊙﹏⊙）
+今天的题目敲着就有点神了，主要是从指针开始都挺神的，那就正好边敲，边想，边学学了。
+[![FpblP.gif](https://imglink.win/image/2023/07/04/FpblP.gif)](https://imglink.org/image/FpblP)
 
-[![Fpe5m.md.jpeg](https://imglink.win/image/2023/07/03/Fpe5m.md.jpeg)](https://imglink.org/image/Fpe5m)
-今天的话是一共十题。
+一：十进制转二进制
+[![FxsFp.png](https://imglink.win/image/2023/07/04/FxsFp.png)](https://imglink.org/image/FxsFp)
+因为已经给了main函数，现在就是要编写十进制转二进制的函数，10/2=5，10%2=0；5/2=2，5%2=1；2/2=1，2%2=0.最后就得1010
+[![FxDVQ.png](https://imglink.win/image/2023/07/04/FxDVQ.png)](https://imglink.org/image/FxDVQ)
 
-一：判断上三角矩阵
-![FpiJy.png](https://imglink.win/image/2023/07/03/FpiJy.png)
-编了一下，这道题的话就是要实现当行数大于列数时，这里的数要为0.所以就先按行按列将全部数先输进去，然后判断行数大于列数时，这个数是不是0就行了。（要注意列小于行时，时j<i,不是j<x，）判断的话感觉还是要用不成立就为0，成立为1，最后再如是是0或不是0，就怎样怎样感觉方便些。
-[![FpwGX.png](https://imglink.win/image/2023/07/03/FpwGX.png)](https://imglink.org/image/FpwGX)
+二：分类统计各类字符个数
+[![FxYyn.png](https://imglink.win/image/2023/07/04/FxYyn.png)](https://imglink.org/image/FxYyn)
+要写的两个函数一个用来输入字符，注意输入的范围是从主函数得的，另一个函数是来记录数量的，*s就代表了这个字符，s++，进到下一位。要注意的是这里*s的类型是字符，所以比较的都要加‘’（单引号）
+[![Fxu67.png](https://imglink.win/image/2023/07/04/Fxu67.png)](https://imglink.org/image/Fxu67)
 
-二：时间换算
-[![FpNR6.png](https://imglink.win/image/2023/07/03/FpNR6.png)](https://imglink.org/image/FpNR6)
-时间换算的话感觉要注意的点首先就是关于时间的输入，要：：的输入话，现在咱会的就只有scanf("%d:%d:%d",x,y,z),其次的话就是时间转换了，用if来讨论感觉会有点麻烦，所以就全转换为对应单位，最后再输出。
-![FpQEo.png](https://imglink.win/image/2023/07/03/FpQEo.png)
+三：点赞
+[![Fxvci.png](https://imglink.win/image/2023/07/04/Fxvci.png)](https://imglink.org/image/Fxvci)
+因为要统计哪个数出现的最多，已知这个数的范围，所以建立给数集，最后再来进行比
+[![FxHI1.png](https://imglink.win/image/2023/07/04/FxHI1.png)](https://imglink.org/image/FxHI1)
 
-三：判断素数
-![Fp6Bn.png](https://imglink.win/image/2023/07/03/Fp6Bn.png)
-很经典的题，耗时较短的话在循环判定中要i*i<x;此外要注意的点就是首先先将1排除，然后再来比。比的话感觉还是用布尔函数这种比较方便。
-![FpHJ7.png](https://imglink.win/image/2023/07/03/FpHJ7.png)
+四：打印杨辉三角
+[![FxJsF.png](https://imglink.win/image/2023/07/04/FxJsF.png)](https://imglink.org/image/FxJsF)
+杨辉三角首次编的话确实挺麻烦的，可以看出，第一排第二排全是1，最左边和最右边也全是1，不妨就先将所以数都赋值为1，列的话j<=i；然后关于中间不是1的数，是由它的上一位加上它上一位的前一位相加得到的，所以可以从第二行开始，但注意j<i，不包含最右边的数，然后用公式来算得到。最后的话本题要求正三角形的格式输出，就让j<n-i-1;(输入6）第一行前面空5个空，第二行4个，这样递减来实现，需要记住。
+[![F2e5G.png](https://imglink.win/image/2023/07/05/F2e5G.png)](https://imglink.org/image/F2e5G)
 
-四：稳赢
-[![FpJUi.png](https://imglink.win/image/2023/07/03/FpJUi.png)](https://imglink.org/image/FpJUi)
-需要注意的点这里输入是字符串，要用string，平局的实现就靠循环到（k+1）的倍数实现，因为用的是while的循环，每次循环结束后i++。（一般来说不明确循环次数的都用while，知道的用for)
-[![Fpmo1.png](https://imglink.win/image/2023/07/03/Fpmo1.png)](https://imglink.org/image/Fpmo1)
+五：矩阵运算
+[![F2iJu.png](https://imglink.win/image/2023/07/05/F2iJu.png)](https://imglink.org/image/F2iJu)
+先弄数组将其输进去，不要最后一行，最后一列，算的时候注意范围就行了，而对角线的数字可以得出规律，i+j=（n-1),算的时候也排除掉就行了
+[![F2wUI.png](https://imglink.win/image/2023/07/05/F2wUI.png)](https://imglink.org/image/F2wUI)
 
-五：幸运彩票
-[![FpzEF.png](https://imglink.win/image/2023/07/03/FpzEF.png)](https://imglink.org/image/FpzEF)
-这道题的话明确是求6位数字的前，后三位之和，这6位数就做整体输进去，就用到了字符串，但是后面要进行加法，就要将字符转换成数字，然后计算就行了。
-[![FpFtB.png](https://imglink.win/image/2023/07/03/FpFtB.png)](https://imglink.org/image/FpFtB)
+六：计算职工工资
+[![F2NRx.png](https://imglink.win/image/2023/07/05/F2NRx.png)](https://imglink.org/image/F2NRx)
+结构体的简单运用，知道如何构建结构体，用，就行了
+[![F2QEs.png](https://imglink.win/image/2023/07/05/F2QEs.png)](https://imglink.org/image/F2QEs)
 
-六：大笨钟的心情
-[![FpPA3.png](https://imglink.win/image/2023/07/03/FpPA3.png)](https://imglink.org/image/FpPA3)
-首先就要输入24个数，每个数是分开的，所以就用数组，暂定24个全为0，然后靠循环来输入。其次的话，就是输入数字的范围，当并不在这个范围内就不运行，所以放在while循环的条件里。最后还要注意下要求输出的格式。
-[![FplLJ.png](https://imglink.win/image/2023/07/03/FplLJ.png)](https://imglink.org/image/FplLJ)
+七：计算平均成绩
+[![F2rtZ.png](https://imglink.win/image/2023/07/05/F2rtZ.png)](https://imglink.org/image/F2rtZ)
+因为这里要与平均成绩相比较后再决定要不要输出，所以选用的结构体加上[i]作为序号
+[![F2uqP.png](https://imglink.win/image/2023/07/05/F2uqP.png)](https://imglink.org/image/F2uqP)
 
-七：统一一行文本的单词个数
-[![Fp7lM.png](https://imglink.win/image/2023/07/03/Fp7lM.png)](https://imglink.org/image/Fp7lM)
-这道题欠缺的东西确实有点多了，关于，字符串，字符数组的求其长度的函数，还有到底如何确定单词个数，怎样确定单词的位置。不能空格加1来求（空格可以是多个）虽然这个用python很好写呀，就以空格分割就行行了。print(len(list(input().split())))
-[![FpaqG.png](https://imglink.win/image/2023/07/03/FpaqG.png)](https://imglink.org/image/FpaqG)
+八： 吃火锅
+[![F26B9.png](https://imglink.win/image/2023/07/05/F26B9.png)](https://imglink.org/image/F26B9)
+因为是一句一句的检验有没有，所以一句一句的输入比较好，就要用到循环，当最后输入”.“时停止，输入的话因为可能存在空格，就不能用cin，cin会省略空格后的字符，用getline()的话是以换行符或者EOF结束，如何进行比较就要用到s.substr()了，要记住。
+![F2HJg.png](https://imglink.win/image/2023/07/05/F2HJg.png)
 
-八：找最长的字符串
-[![FpOBu.png](https://imglink.win/image/2023/07/03/FpOBu.png)](https://imglink.org/image/FpOBu)
-这个的话主要还是就两两相比，长的保留，主要要注意的字符串的复制是strcpy.
-[![FppSI.png](https://imglink.win/image/2023/07/03/FppSI.png)](https://imglink.org/image/FppSI)
- 
-九：出生年
-[![Fp2os.png](https://imglink.win/image/2023/07/03/Fp2os.png)](https://imglink.org/image/Fp2os)
-wow，虽然弄了会应该弄出来了，但不会高级的算法，就通过遍历x,来满足k的值来算的，条件的代码举例就很多。
-[![FpCYZ.png](https://imglink.win/image/2023/07/03/FpCYZ.png)](https://imglink.org/image/FpCYZ)
 
-十：查验身份证
-[![Fpctf.png](https://imglink.win/image/2023/07/03/Fpctf.png)](https://imglink.org/image/Fpctf)
+九：一对一
+[![F27lE.png](https://imglink.win/image/2023/07/06/F27lE.png)](https://imglink.org/image/F27lE)
+因为已知输入时就是按成绩高低输入的，所以进行一对一时，只用进行首位匹对就行，但是要当性别不同时才能匹配，可以构造结构体来输入匹对
+[![F2f1j.png](https://imglink.win/image/2023/07/06/F2f1j.png)](https://imglink.org/image/F2f1j)
 
-以上8道是小组的题目，个人两道感觉挺麻烦的，就后面再补，弄半天了现在脑壳有点旷。还是希望要多学学，多思考。那第一篇博客差不多就这样子了，很好奇弄出来是效果o>_<o
-[![FptUx.jpeg](https://imglink.win/image/2023/07/03/FptUx.jpeg)](https://imglink.org/image/FptUx)
+十：字符串逆序
+[![F2OBp.png](https://imglink.win/image/2023/07/06/F2OBp.png)](https://imglink.org/image/F2OBp)
+这个用python感觉最简单，c++的话输入感觉还是用getlin(cin),光cin会省略空格后的字符，然后再逆序输出就行了
+[![F2pSQ.png](https://imglink.win/image/2023/07/06/F2pSQ.png)](https://imglink.org/image/F2pSQ)
 
+写着确实还是有点费时，主要都有过一遍，但过完一遍感觉还是很nice，慢慢有空就弄咯
+[![F2tXn.jpeg](https://imglink.win/image/2023/07/06/F2tXn.jpeg)](https://imglink.org/image/F2tXn)
 
 
 
